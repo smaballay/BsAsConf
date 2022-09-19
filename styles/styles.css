@@ -1,0 +1,36 @@
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.dotted-underline{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.form{
+    max-width: 800px;
+}
+
+.footer{
+    background-color: rgb(16, 64, 80);
+    color: rgb(255, 255, 255);
+}
+
+.btn-green{
+    background-color: rgb(54, 168, 69);
+    color: rgb(255, 255, 255);
+}
+
+.btn-green-light{
+    background-color: rgb(118, 199, 64);
+    color: rgb(255, 255, 255);
+}
+
+.text-green{
+    color: rgb(54, 168, 69);
+}
