@@ -19,20 +19,81 @@
 .footer{
     background-color: rgb(16, 64, 80);   
 }
+
 .footer a{
     color: rgb(255, 255, 255);
 }
 
 .btn-green{
-    background-color: rgb(54, 168, 69);
-    color: rgb(255, 255, 255);
-}
-
-.btn-green-light{
     background-color: rgb(118, 199, 64);
     color: rgb(255, 255, 255);
 }
 
+.btn-green:hover{
+    background-color: rgb(54, 168, 69)!important;
+    color: rgb(255, 255, 255)!important;
+}
+
 .text-green{
-    color: rgb(54, 168, 69);
+    color: rgb(118, 199, 64);
+}
+
+.nav-link{
+    transition: all 0.7s ease;
+    position: relative;
+}
+
+.nav-link:hover{
+    color: rgb(255,255,255);
+}
+
+.nav-link:after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	background-color: rgb(118, 199, 64);
+	width: 0;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+  	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.nav-link:hover:after {
+	width: 100%;
+}
+
+.descuentos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.estudiante, .trainee, .junior{
+    width: 13rem;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+
+.estudiante{
+    border: solid 2px rgb(67, 151, 219);
+}
+
+.trainee{
+    border: solid 2px rgb(47, 156, 56);
+}
+
+.junior{
+    border: solid 2px rgb(255, 217, 0);
+}
+
+.documentacion{
+    font-size: 0.85rem;
+}
+
+.form{
+    width: 40rem;
 }
