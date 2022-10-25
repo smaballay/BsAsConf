@@ -97,3 +97,7 @@
 .form{
     width: 40rem;
 }
+
+.form-control:disabled{
+    background-color: rgba(87, 162, 224, 0.4);
+}

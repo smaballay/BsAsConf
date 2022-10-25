@@ -70,7 +70,7 @@
     <section class="container pb-3 d-flex flex-column align-items-center">
         <h5>VENTA</h5>
         <h1>VALOR DE TICKET $200</h1>
-        <form class="form row g-3">
+        <form class="form row g-3 pt-3">
             <div class="col-md-6">
                 <input type="text" class="form-control" placeholder="Nombre">
             </div>
@@ -81,19 +81,26 @@
                 <input type="mail" class="form-control" placeholder="Correo">
             </div>
             <div class="col-md-6">
-                <label for="inputCity" class="form-label">Cantidad</label>
-                <input type="text" class="form-control" placeholder="cantidad">
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <input id="cantidad" type="text" class="form-control" placeholder="Cantidad">
             </div>
-            <div class="col-md-6">
-                <label for="inputState" class="form-label">Categoria</label>
-                <select id="inputState" class="form-select">
+            <div class="col-md-6 mb-3">
+                <label for="categoria" class="form-label">Categoria</label>
+                <select id="categoria" class="form-select">
                     <option selected>Estudiante</option>
                     <option>Trainee</option>
                     <option>Junior</option>
-              </select>
+                </select>
             </div>
-            <input class="form-control" type="text" value="" disabled readonly>
+            <div class="col-12 mt-4 mb-4">
+                <input id="costoTotal" class="form-control" value="Total a Pagar: $" type="text" disabled readonly>
             </div>    
+            <div class="col-6 d-grid gap-2">
+                <button class="btn btn-green" type="reset">Borrar</button>
+            </div>
+            <div class="col-6 d-grid gap-2">
+                <button onclick="resumen()" class="btn btn-green" type="button">Resumen</button>
+            </div>
         </form>
     </section>
 
@@ -123,5 +130,6 @@
             </li>
         </div>
     </footer> 
+    <script src="../js/main.js"></script>
 </body>
 </html>
